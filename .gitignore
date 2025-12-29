@@ -1,0 +1,31 @@
+# OS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.iml
+.classpath
+.project
+.settings/
+.factorypath
+
+# Node / Angular
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+frontend/.angular/
+
+# Java / Spring Boot
+target/
+build/
+.gradle/
+!mvnw
+!mvnw.cmd
+.mvn/wrapper/maven-wrapper.properties
+help.md
+logs/
+*.log
