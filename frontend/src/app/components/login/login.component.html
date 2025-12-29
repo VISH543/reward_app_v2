@@ -1,0 +1,48 @@
+<div class="login-wrapper">
+    <!-- Animated background elements -->
+    <div class="circles">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+    
+    <div class="login-container">
+        <div class="glass card login-card">
+            <div class="brand-header">
+                <div class="logo-icon"></div>
+                <h1>Reward Redemption Application</h1>
+                <p>Welcome to the CES Portal</p>
+            </div>
+            
+            <form (ngSubmit)="onSubmit()" class="login-form">
+                <div class="input-group">
+                    <label>Username</label>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" [(ngModel)]="form.username" required placeholder="Enter your username">
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label>Password</label>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" [(ngModel)]="form.password" required placeholder="Enter your password">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block btn-lg">
+                    <span>Sign In</span>
+                    <div class="arrow-icon">→</div>
+                </button>
+                
+                <div *ngIf="isLoginFailed" class="error-msg fade-in">
+                    <span class="error-icon">⚠</span>
+                    {{ errorMessage }}
+                </div>
+            </form>
+
+            <div class="login-footer">
+                <p>Secure System Access</p>
+            </div>
+        </div>
+    </div>
+</div>
